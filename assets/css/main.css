@@ -1,0 +1,153 @@
+    /*color palets*/
+    /*
+    #022F40 muy oscuro
+    #38AECC mas claro que el base 
+    #0090C1 color base
+    #183446 oscuro
+    #046E8F claro
+    */  
+    html{
+    font-family: 'Merriweather', serif;
+    }
+    .container{
+        background: #c2e59c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38AECC, #046E8F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38AECC, #046E8F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+    .content{
+        background-color: white;
+       /*  max-width: 960px;
+        max-height: 860px;
+        width: 100%;
+        height: 100%;  */
+        height: 90vh;
+        width: 90vw;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        padding: 0.1em;
+        border-radius: 20px;
+        overflow: scroll ;
+    } 
+    .table{
+        width: 100%;
+        border-spacing: 0;        
+    }
+    
+    .table th, 
+    .table td{
+        padding: 1em;
+        text-align: left;
+    }
+
+    .table tr:nth-child(even){
+        background-color: #0090C1;
+        box-shadow : 5px 0px 25px 3px rgba(0,0,0,0.75);         
+    }
+
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        color:orange
+    }
+
+    th{
+        display: none;
+    }
+
+    td{
+        display: block;
+    }
+    .fa-star{
+        color: #c2e59c;     
+    }
+    .inline{
+        display: inline-block;
+        
+    }
+    .center{
+        text-align: center;
+    }
+   
+    .position{
+        background-color: #0090C1;
+        padding: 10px;
+        margin-left: 5px;
+        border-radius: 4px;
+    }
+    .left{
+       padding-right:3em             
+    }
+    .right{
+        padding-left: 3em;
+    }
+    .button{       
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        display: sticky;      
+    }
+    .table{
+        text-transform: uppercase;
+        text-align: center
+    }
+    .item-title{
+        text-transform: uppercase;
+    }
+    .text{
+    padding: 0.5em;
+    }
+    .clubes{
+        list-style-type:square;
+    }
+
+    a:hover{
+        color: #c2e59c;
+    }
+    .fa-star:hover{
+        color:#c2e59c;
+    }
+  
+    @media(min-width:600px){
+        th{
+            display: table-cell;
+        }
+        td{
+            display:table-cell;
+        }
+        td:nth-of-type(1){
+            font-size: 0.8em;
+            color: black;
+        }
+        iframe{
+            height: 40%;
+            width: 55%;
+        }
+       
+        
+        }
+
+        @media(min-width:900px){
+        th{
+            display: table-cell;
+        }
+        td{
+            display:table-cell;
+        }
+        td:nth-of-type(1){
+            font-size: 0.8em;
+            color: black;
+        }
+        iframe{
+            height: 400px;
+            width: 550px;
+                        
+        }
+        .content{
+            padding:1.8em;
+            height: 80%;
+            width: 80%;
+        }
+        }
